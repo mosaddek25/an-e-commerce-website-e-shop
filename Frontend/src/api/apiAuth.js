@@ -10,6 +10,7 @@ export const register = (user) => {
 };
 
 export const login = (user) => {
+    console.log(user)
     return axios.post(`${API}/user/signin`, user, {
         headers: {
             'Content-Type': 'application/json'
